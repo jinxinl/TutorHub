@@ -1,0 +1,10 @@
+姓名:叶伟
+职称:青年百人计划特聘研究员
+学科:控制科学与工程学科
+专业:数据挖掘
+研究方向:数据挖掘、机器学习、网络科学和决策推理。具体包括：聚类、分类、半监督学习、图内核、图神经网络、因果推断和人机合作。
+导师类型:博/硕导
+电子邮件:yew@tongji.edu.cn
+联系电话:
+通讯地址:
+个人简介:Welcome! 来同济大学之前，我在加州大学圣塔芭芭拉分校计算机系从事博士后研究，研究课题包括图内核、图神经网络和人机合作。在此之前，我有过短暂的工业界工作经历：在腾讯技术工程事业群AI平台部研究王者荣耀游戏AI。我在慕尼黑大学计算机系获得博士学位，博士论文获得慕尼黑大学“Magna Cum Laude”荣誉。目前我是多个国际著名期刊和会议的评审者，包括ACM TKDD, IEEE TKDE, IEEE TNNLS, IEEE TSMC: Systems, Information Sciences, SIGKDD, ICDM, ICDE, CIKM, WWW, IJCAI, VLDB, IEEE BigData等。我也是国际人工智能大会AAAI 2020，AAAI 2021, SIAM国际数据挖掘会议SDM 2021的程序委员会委员。我还是国际大数据会议IEEE BigData 2019的Local Arrangement Chair。非常欢迎有志于从事数据挖掘、机器学习和人工智能的学生报考硕士或博士研究生。个人主页：https://weiye.userweb.mwn.de/</a>

@@ -1,0 +1,200 @@
+[
+    {
+        "MemberID": 3,
+        "StartDay": "2023-08-22T12:53:23",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 6,
+        "StartDay": "2024-12-24T08:33:58",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 8,
+        "StartDay": "2023-08-22T15:13:50",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 9,
+        "StartDay": "2020-01-30T00:02:33",
+        "ValidityTerm": 4,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 10,
+        "StartDay": "2021-10-12T19:45:12",
+        "ValidityTerm": 2,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 11,
+        "StartDay": "2023-02-15T23:24:55",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 12,
+        "StartDay": "2020-06-01T11:06:24",
+        "ValidityTerm": 3,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 15,
+        "StartDay": "2020-09-03T22:05:33",
+        "ValidityTerm": 4,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 16,
+        "StartDay": "2024-03-22T13:48:55",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 17,
+        "StartDay": "2025-04-02T17:10:05",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 19,
+        "StartDay": "2021-07-07T05:44:58",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 20,
+        "StartDay": "2024-12-29T08:53:26",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 22,
+        "StartDay": "2023-05-14T09:12:31",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 23,
+        "StartDay": "2024-10-17T02:36:14",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 24,
+        "StartDay": "2023-04-04T15:57:29",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 25,
+        "StartDay": "2022-10-19T07:59:05",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 26,
+        "StartDay": "2022-10-09T17:56:39",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 27,
+        "StartDay": "2025-02-22T05:16:05",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 30,
+        "StartDay": "2021-05-12T23:51:11",
+        "ValidityTerm": 3,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 31,
+        "StartDay": "2022-09-28T17:36:15",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 34,
+        "StartDay": "2022-12-18T01:50:31",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 35,
+        "StartDay": "2022-07-14T21:47:41",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 36,
+        "StartDay": "2022-11-21T22:59:00",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 41,
+        "StartDay": "2022-08-08T13:26:07",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 44,
+        "StartDay": "2021-02-10T01:23:29",
+        "ValidityTerm": 2,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 46,
+        "StartDay": "2020-06-01T12:36:02",
+        "ValidityTerm": 3,
+        "isAvailable": "no"
+    },
+    {
+        "MemberID": 48,
+        "StartDay": "2023-04-30T08:59:33",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 54,
+        "StartDay": "2024-12-08T12:18:42",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 55,
+        "StartDay": "2024-01-12T21:41:13",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 57,
+        "StartDay": "2025-07-09T10:09:01",
+        "ValidityTerm": 2,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 58,
+        "StartDay": "2025-02-12T01:11:23",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 59,
+        "StartDay": "2023-06-09T08:50:32",
+        "ValidityTerm": 4,
+        "isAvailable": "yes"
+    },
+    {
+        "MemberID": 60,
+        "StartDay": "2023-11-14T00:49:47",
+        "ValidityTerm": 3,
+        "isAvailable": "yes"
+    }
+]

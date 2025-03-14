@@ -1,0 +1,10 @@
+姓名:王超
+职称:教授
+学科:信息与通信工程学科
+专业:通信与信息系统
+研究方向:无线网络资源分配及干扰管理、MIMO技术、多用户协作通信、网络编码、认知无线电、车联网等
+导师类型:博导/硕导
+电子邮件:chaowang@tongji.edu.cn
+联系电话:+862169583671
+通讯地址:上海市曹安公路4800号电信大楼733室
+个人简介:博士，副教授（个人主页：http://chao-wang.weebly.com）。本科毕业于中国科学技术大学（1998-2003）；硕士和博士毕业于英国爱丁堡大学（2004-2009）；2008年曾赴美国普林斯顿大学交流学习；2009年至2012年在瑞典皇家理工学院工作，任博士后及研究员；2013年加入同济大学。研究领域为无线网络通信及信号处理，主要研究方向包括无线网络资源分配及干扰管理、MIMO技术、多用户协作通信、网络编码、认知无线电、车联网等。作为项目负责人承担过瑞典科研理事会基金项目“无线协作通信网络干扰协调技术”（Interference-Coordination in Wireless Cooperative Networks, 2010-2011）。作为瑞典皇家理工学院Co-project-coordinator参与过欧盟第七研发框架计划项目“次级频谱接入量化评估”（QUASAR-Quantitative Assessment of Secondary Spectrum Access, 2010-2012）和瑞典国家战略科研基金项目“无线接入网资源分配及多点协作”（RAMCOORAN-Resource Allocation and Multi-node Cooperation in Radio Access Networks, 2009-2012）。近年来在无线通信领域学术期刊和会议发表论文30余篇，其中10篇为SCI检索。先后12次被无线通信领域国际会议邀请作为TPC Member，其中包括2015/2013/2012 IEEE ICC、2014 IEEE VTC-Fall、2014/2013 IEEE/SAE ICCVE、2012 IEEE PIMRC等，并超过40次应邀作为IEEE TIT、TWC、TCOM、TSP、TVT、CL等期刊的评审人

@@ -1,0 +1,10 @@
+姓名:丁玉隆
+职称:助理教授
+学科:控制科学与工程
+专业:
+研究方向:人机协同、无人系统空地协同
+导师类型:
+电子邮件:dingyulong@tongji.edu.cn
+联系电话:
+通讯地址:
+个人简介:丁玉隆，同济大学控制科学与工程系及上海自主智能无人系统科学中心助理教授。2008年至2012年就读于齐鲁工业大学自动化系，获学士学位；2012至2015年就读于厦门大学智能科学与技术系，获硕土学位；2015至2020年就读于北京理工大学自动化学院，获博士学位，导师陈杰院士。博士期间在香港中文大学机械与自动化系Ben M. Chen教授（IEEE fellow）无人系统实验室博士联合培养1年。2020至2023年在鹏城国家实验室开展博土后研究，主持博士后面上基金1项，并于2020年入选博士后创新人才支持计划。研究方向主要为人机协同和无人系统空地协同任务规划，相关工作以第一作者在《IEEE Transactions on Cybernetics》、《Automatica》 、《IEEE Transactions on Automation Science and Engineering》等国际级刊和领域内权威期刊发表，出版专著一部，获《Control Theory and Technology》2020年最佳论文奖，博士毕业论文获得由中国人工智能学会颁发的吴文俊人工智能优秀博士学位论文奖。代表论文：[1] J. Chen, YL. Ding, B. Xin, et al., A Unifying Framework for Human–Agent Collaborative Systems—Part I: Element and Relation Analysis[J], IEEE Transactions on Cybernetics, 2022, 52(1): 138-151. [2] YL Ding, B Xin, J Chen, et al., A Unifying Framework for Human-Agent Collaborative Systems-Part II: Design Procedure and Application[J]. IEEE Transactions on Cybernetics, 2022, 52(11): 11990 - 12002.[3] YL. Ding, B. Xin, LH. Dou, et al., A Memetic Algorithm for Curvature-Constrained Path Planning of Messenger UAV in Air-Ground Coordination[J], IEEE Transactions on Automation Science and Engineering, 2022,19(4): 3735 - 3749[4] YL. Ding, B. Xin, J. Chen. Precedence-constrained Path Planning of Messenger UAV For Air-Ground Coordination[J]. Control Theory and Technology, 2019, 17(1): 13-23.（最佳论文奖）[5] YL. Ding, B. Xin, J. Chen, Curvature-Constrained Path Elongation with Expected Length for Dubins Vehicle[J]. Automatica, 2019, 108: 108495.专著：[1] 丁玉隆、陈杰、辛斌、窦丽华、方浩，空地协同系统任务规划理论与方法[M]，北京理工大学出版社，2022, ISBN 978-7-5763-1218-8

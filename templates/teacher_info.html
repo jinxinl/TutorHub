@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教师信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_teacher_info.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="teacher-info-container">
+            <div class="info-box">
+                {% for line in info.split('\n') %}
+                    <div class="info-line">{{ line }}</div>
+                {% endfor %}
+            </div>
+            <div class="view-relations-link">
+                <a href="javascript:void(0);" onclick="checkMembership()">点击查看导师学术关系</a>
+            </div>
+        </div>
+
+        <!-- 图表容器 -->
+        <div class="graphs-container" id="graphs-container" style="display: none;">
+            <div class="graph">
+                <img id="alumni-graph" src="" alt="校友关系">
+            </div>
+            <div class="graph">
+                <img id="tutor-rel-graph" src="" alt="师承关系">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tname = "{{ tname }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/check_membership.js') }}"></script>
+</body>
+</html>

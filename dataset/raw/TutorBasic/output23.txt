@@ -1,0 +1,10 @@
+姓名:黄新林
+职称:教 授
+学科:信息与通信工程学科
+专业:通信与信息系统
+研究方向:认知无线电、机器学习、多媒体传输、Massive MIMO反馈、OFDM技术
+导师类型:博导/硕导
+电子邮件:xlhuang@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号电信大楼
+个人简介:黄新林，IEEE高级会员、上海市浦江人才、上海市晨光学者、哈工大优博。分别于2008年、2011年获得哈尔滨工业大学信息与通信工程学科（所在二级学科为国家重点学科）工学硕士、工学博士学位。目前主持的项目有：国家自然科学基金重点项目子课题、国家自然科学基金（青年）、上海市自然科学基金（青年）、上海市浦江人才计划、上海市晨光计划。研究方向为：认知无线电网络、机器学习、多媒体传输、MIMO反馈技术、Vector OFDM技术；欢迎热爱学术研究、数学基础较好、对研究方向感兴趣的同学保送或报考研究生。专业服务：&sup2;2016年，筹办首届MLICOM2016国际会议，担任大会主席&sup2;2015年,作为主办方举办国际会议<em>IEEE Chinacom2015</em>,并担任Publications Chair和Local Chair&sup2;2016年,担任国际期刊“<em>Mobile Networks and Applications (MONET)</em>” (SCI),Chief Guest Editor. Special Issue on<em>Machine Learning and Intelligent Communications</em>&sup2;2015年, 担任国际期刊“<em>Mobile Networks and Applications (MONET)</em>” (SCI),Chief Guest Editor. Special Issue on<em>Emerging Technologies in Wireless Communications</em>&sup2;2014年,担任国际期刊“<em>IEEE Wireless Communications</em>”(SCI),Guest Editor. Special Issue on<em>Visible Light Communications</em>发表文章:在<em>IEEE Journal on Selected Areas in Communications</em>,<em>IEEE Transactions on Multimedia</em>,<em>IEEE Transactions on Vehicular Technology</em>,<em>IEEE Transactions on Dependable and Secure Computing</em>,<em>IEEE Transactions on Circuits and Systems for Video Technology</em>,<em>IEEE Transactions on Wireless Communications</em>,<em>IEEE Wireless Communications</em>,<em>IEEE Systems Journal</em>,<em>IEEE Communications Letters</em>,<em>Computer Communications</em>等国际期刊发表/录用学术文章60多篇（其中<em>SCI&amp;EI</em>双检索文章20多篇，<em>EI</em>单检索文章20多篇）。已发表国际专著章节2章；已授权国家发明专利4项、正在受理发明专利8项。教学情况：2012年至今,担任本学科基础课程《通信系统原理》双语教学主讲人2013年至今,担任本专业基础课程《轨道交通可靠通信技术》主讲人2014年,“同济大学优秀本科毕业论文指导教师”称号2015年10月,获得同济大学“校青年教师讲课竞赛”三等奖2016年,“同济大学优秀本科毕业论文指导教师”称号

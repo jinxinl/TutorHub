@@ -1,0 +1,10 @@
+姓名:臧笛
+职称:副教授 
+学科:计算机科学与技术学科
+专业:计算机应用技术   
+研究方向:机器学习（深度学习），模式识别与图像处理，智能交通信息处理   
+导师类型:博导/硕导  
+电子邮件:zangditj@163.com
+联系电话:021-69589867
+通讯地址:上海市曹安公路4800号同济大学嘉定校区505
+个人简介:臧笛，女，副教授，博士生导师，德国基尔大学计算机科学博士，美国明尼苏达大学计算机与工程系博士后，嵌入式系统与服务计算教育部重点实验室骨干教师。曾于韩国全北大学信息与电子系、荷兰莱顿大学计算机系和芬兰阿尔托大学进行访问研究，担任国家级、上海市级大学生创新计划，同济大学创新训练计划SITP项目及法国暑期实习生指导教师。主要研究方向为机器学习(深度学习)、模式识别及图像处理，智能交通信息处理。在国外权威学术刊物IEEE Transactions onIntelligent Transportation System, IEEE Access, Optics Letters, Optics Express, Journal of Electronic Imaging, Journal of Visual Communication and Image Representation, IEEE Transactions on Control Systems, IEEE Trans. On Automation Science and Engineering, International Journal of Neural Systems和ICIP、CAIP、DAGM等国际会议上发表SCI/EI收录论文50余篇。IEEE会员，ACM会员，EURASIP（欧洲信号处理协会）会员，IASTED (国际科学技术发展联合会)图像分部技术委员，CCF计算机视觉专委委员，并担任国际期刊IEEE Transactions onIntelligent Transportation System, IEEE Transactions on Intelligent Vehicles, Journal of Electronic Imaging, Journal of Visual Communication and Image Representation审稿人。主持国家自然科学基金2项，上海自然科学基金1项，教育部博士学科点新教师基金1项，留学回国人员科研启动基金1项，中央高校基本科研业务费专项资金学科交叉项目1项，教育部嵌入式与服务计算重点实验室开放课题1项，授权发明专利5项。作为主要研究人员，参与上海市科委重大基础研究项目、国家自然科学基金面上项目和科技部国际合作专项等多个项目。

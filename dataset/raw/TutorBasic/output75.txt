@@ -1,0 +1,10 @@
+姓名:吴江枫
+职称:教授
+学科:控制科学与工程学科
+专业:
+研究方向:集成电路设计，通信芯片
+导师类型:博/硕导
+电子邮件:jfwu@tongji.edu.cn
+联系电话:
+通讯地址:上海市嘉定区曹安公路4800号同济大学电信楼
+个人简介:吴江枫，1995年获清华大学学士，2002年获美国卡内基梅隆（Carnegie Mellon University）大学博士。2003年至2015年在美国博通公司工作。2016年起担任同济大学电子与信息工程学院教授。IEEE高级会员，现任IEEE CICC会议技术程序委员会成员和IEEE ICTA会议技术程序委员会成员。主要研究方向为混合信号集成电路与通信芯片，是全频段捕获（Full-Band Capture）技术的创始人之一。拥有15项美国获批专利，发表论文27篇，被引用过千次。近5年在IEEE JSSC，ISSCC，VLSI和CICC四个集成电路领域水平最高的期刊会议发表论文10篇。曾获ADI杰出学生设计师奖，Broadcom CEO成就奖等。研究方向：集成电路设计，通信芯片代表论文：1.Jiangfeng Wu, G. Cusmai, A. Wei-Te Chou, et al., “A 2.7mW/Channel 48-to-1000MHz Direct Sampling Full-Band Cable Receiver”, IEEE Journal of Solid-State Circuits, Vol.51, No.4, 2016, pp.845 – 859.2.Jiangfeng Wu, Acer Wei-Te Chou, Tianwei Li, et al., “A 4GS/s 13b Pipelined ADC with Capacitor and Amplifier Sharing in 16nm CMOS”, 2016 IEEE International Solid-State Circuits Conference (ISSCC), pp.466-467, February 1-4, 2016.3.M. Brandolini, Jiangfeng Wu, et al., “A 5GS/s 150mW 10b SHA-Less Pipelined/SAR Hybrid ADC in 28nm CMOS”, IEEE Journal of Solid-State Circuits, Vol.50, No.12, 2015, pp.2922 – 2934.4.Jiangfeng Wu, Chun-Ying Chen, et al., “A 240-mW 2.1-GS/s 52dB-SNDR Pipeline ADC Using MDAC Equalization”, IEEE Journal of Solid-State Circuits, Vol.48, No.8, 2013, pp.1818 – 1828.5.Jiangfeng Wu, A. Wei-Te Chou, et al., “A 5.4GS/s 12b 500mW Pipeline ADC in 28nm CMOS”, 2013 Symposium on VLSI Circuits (VLSI), pp.92-93, June 12-14, 2013, Kyoto, Japan.6.Chun-Ying Chen, Jiangfeng Wu, et al., “A 12-Bit 3 GS/s Pipeline ADC With 0.4mm2 and 500mW in 40nm Digital CMOS”, IEEE Journal of Solid-State Circuits, Vol.47, No.4, 2012, pp.1013 – 1021.7.Jiangfeng Wu and L.R. Carley, “Electromechanical Delta-Sigma Modulation with High-Q Micromechanical Accelerometers and Pulse Density Modulated Force Feedback”, IEEE Transactions on Circuits and Systems I, Vol.53, No.2, Feb, 2006.8.Jiangfeng Wu, G.K. Fedder and L.R. Carley, “A Low-Noise Low-Offset Capacitive Sensing Amplifier for a 50-g/√Hz Monolithic CMOS MEMS Accelerometer”, IEEE Journal of Solid-State Circuits, Vol.39, No.5 , 2004, pp.722 – 730.

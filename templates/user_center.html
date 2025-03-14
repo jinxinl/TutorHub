@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="/static/css/style_user_center.css">
+</head>
+<body>
+    <div class="container">
+        <div class="teacher-info-container">
+            <div class="info-box">
+                <div class="info-line">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" value="{{ username }}" required>
+                </div>
+                <div class="info-line">
+                    <label for="password">密码:</label>
+                    <input type="text" id="password" name="password" value="{{ password }}" required>
+                </div>
+                <div class="info-line">
+                    <label for="membership">身份:</label>
+                    {% if is_member %}
+                    <input type="text" id="membership" name="membership" value="会员" required>
+                    {% else %}
+                    <input type="text" id="normaluser" name="normaluser" value="普通用户" required>
+                    {% endif %}
+                </div>
+                <div class="info-line">
+                    <button type="button" id="logout">退出登录</button>
+                    <button type="button" id="feedback-btn">填写反馈</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 反馈表单弹窗 -->
+        <div id="feedback-form" style="display: none;">
+            <div class="feedback-container">
+                <span class="close-btn">&times;</span>
+                <h2>填写反馈</h2>
+                <textarea id="feedback-text" rows="4" cols="50" placeholder="请输入您的反馈..."></textarea>
+                <button type="button" id="submit-feedback">确认提交</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/user_center.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+姓名:闫春钢
+职称:教 授
+学科:计算机科学与技术学科
+专业:计算机科学与技术
+研究方向:计算机协同与服务计算、可信计算、智能计算等
+导师类型:博/硕导
+电子邮件:cgyan2@163.com
+联系电话:021-69589867
+通讯地址:
+个人简介:1986年于山东科技大学应用数学专业获理学学士学位，1993年于山东科技大学运筹学与控制论专业获理学硕士学位，2006年于同济大学计算机应用技术专业获工学博士学位。1999年到同济大学工作，现任教授，博（硕）士生导师。近年来获得国家级奖项2项、省部级奖项1项；主持国家863项目2项、国家工信部项目1项、国家自然科学基金2项、省部级项目多项；已在《IEEE Transactions on Systems Man and Cybernetics, Part A: Systems》、《IEEE Transactions on Automation Science and Engineering》等国内外核心刊物及国际会议发表论文40余篇。主要研究方向：计算机协同与服务计算、可信计算、智能计算等。科研项目（2010-2015）：主持项目：1.软件安全性病态模型及其检测、防治技术研究，国家863项目2.普适计算环境支撑系统中的路网信息服务技术研究，国家863项目3.支持国产CPU的编译系统及工具链之五（核高基重大专项），国家工信部5.面向社会秩序的社会计算理论和方法研究，国家自然科学基金6.无线传感网与无线局域网共存系统的容量研究，上海市科委7.交通状态指数高性能计算及决策应用关键技术研究，上海市科委论文著作（主要论文）：1. Modeling and Validating E-commerce Business Process Based on Petri Nets. IEEE Transactions on Systems Man and Cybernetics, Part A: Systems.卷号: 44/期号:3/页码:327-341, 2014.（第二）2.Modeling and Verification of Online Shopping Business Processes by Considering Malicious Behavior Pattern. IEEE Transactions on Automation Science and Engineering.卷号: PP/期号:99/页码:1-16, 2014.（第二）3.A Novel Method for Calculating Service Reputation.期刊名：IEEE Transactions on Automation Science and Engineering.卷号：10/期号：3/页码：634-642,2013.（第二）获得奖励：1.基于虚拟超市技术的大规模网络资源管理及其应用,国家技术发明奖,排名3, 2010年2.面向复杂问题结构可计算的决策支持系统研究与应用,教育部科学技术进步奖,排名2 2010年3.城市交通智能路网的关键技术及应用,国家科学技术进步奖,排名10, 2014年

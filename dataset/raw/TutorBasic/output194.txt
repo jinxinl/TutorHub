@@ -1,0 +1,10 @@
+姓名:王俊凯
+职称:助理教授
+学科:控制科学与工程
+专业:系统工程
+研究方向:可持续制造调度、设备健康管理
+导师类型:硕导
+电子邮件:jkwang@tongji.edu.cn
+联系电话:+86 21 69588911 ext. 8634
+通讯地址:上海市曹安公路4800号智信馆634室
+个人简介:王俊凯，同济大学CIMS中心助理教授，硕士生导师。2017年获同济大学系统工程专业博士学位，2017-2019年参与同济大学“海底科学观测网”国家重大科技基础设施项目任工程师，2019-2022于同济大学电子与信息工程学院任助理研究员。先后在美国普渡大学（Purdue University）环境与生态工程系、瑞典皇家理工学院（KTH Royal Institute of Technology）生产工程系及加拿大尼皮辛大学（Nipissing University）计算机科学与数学系访问交流。现为IEEE、中国自动化学会、中国机械工程学会、上海市系统工程学会会员。研究领域面向节能减排和以人为本的可持续制造调度面向设备健康管理的数据分析挖掘生产系统多业务协同决策优化应用领域航空、半导体、钢铁、橡胶制造等科研项目主持国家自然科学基金青年项目、上海市软科学重点项目、上海市浦江人才计划项目等；先后参与国家自然科学基金重大、重点及面上项目，国家重点研发计划，工信部重大专项，国家重大科技基础设施等项目近十项。代表论文1. P. Zhang, F. Qiao, J. Wang, and J. W. Sutherland, "Novel multi-criteria sustainable evaluation for production scheduling based on fuzzy analytic network process and cumulative prospect theory-enhanced VIKOR," <em>IEEE Robotics and Automation Letters</em>, 2022, 7(4): 9969-9976. 2. L. Zhang, F. Qiao, J. Wang, and X. Zhai, “Equipment health assessment based on improved incremental support vector data description,” <em>IEEE Transactions on Systems, Man and Cybernetics: Systems</em>, 2021, 51(5): 3205-3216. 3. J. Wang, H. Du, J. Xing, F. Qiao, and Y. Ma, “Novel energy- and maintenance-aware collaborative scheduling for a hybrid flow shop based on dual memetic algorithms,” <em>IEEE Robotics and Automation Letters</em>, 2020, 5(4): 5613-5620. 4. J. Wang, F. Qiao, F. Zhao, and J. W. Sutherland, “Batch scheduling for minimal energy consumption and tardiness under uncertainties: a heat treatment application,” <em>CIRP Annals-Manufacturing Technology</em>, 2016, 65(1):17-20. 5. J. Wang, F. Qiao, F. Zhao, and J. W. Sutherland, “A data driven model for energy consumption in the sintering process,” <em>Journal of Manufacturing Science and Engineering-Transactions of the ASME</em>, 2016, 138(10), p. 101001/1-12. 学术专著《高能效制造调度协同优化技术》, 上海: 同济大学出版社, 2022.代表专利1. 考虑疲劳度的柔性流水车间调度控制方法、介质及设备, 授权号: ZL202110516138.72. 一种混合流水车间生产设备调度控制方法, 授权号: ZL202010575648.73. 基于ISAA 算法的烧结配料优化控制方法及控制装置, 授权号: ZL201911014041.54. 一种基于集成模型的烧结能耗预测方法, 授权号: ZL2015102254098如有兴趣合作或希望加入课题组（本科生、硕士研究生），欢迎邮件联系。

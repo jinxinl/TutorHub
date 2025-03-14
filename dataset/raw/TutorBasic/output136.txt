@@ -1,0 +1,10 @@
+姓名:石繁槐
+职称:副教授
+学科:控制科学与工程学科
+专业:模式识别与智能系统
+研究方向:计算机视觉、机器学习、智能农业
+导师类型:硕导
+电子邮件:fhshi@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号智信馆652
+个人简介:工学博士，副教授，IEEE会员。2006年3月毕业于上海交通大学获模式识别与智能系统专业博士学位；2006年4月起任教于上海交通大学，2008年5月-2009年6月美国密苏里大学计算机系博士后；2011年4月起受聘于同济大学，组建图像与视觉计算研究组；2011年8月入选上海市浦江人才计划。先后主持或作为关键技术负责人完成国家自然科学基金（青年+面上）、国家高技术发展研究计划项目（863项目）、上海市科委基础研究重点项目、上海市科技兴农项目、国际合作交流项目等纵横向课题二十余项。已在国内外学术期刊、国际会议发表论文50余篇，代表性论文在Pattern Recognition、CVPR、MICCAI、Pattern Recognition Letters、Engineering Applications of Artificial Intelligence、Journal of Intelligent and Robotic Systems、International Journal of Advanced Manufacturing Technology和Robotica等国际主流学术期刊和会议上发表，获得国家发明专利授权8项，软件著作权3项。受邀担任Physica A，Imaging Science Journal，Pattern Recognition Letters, Machine Vision and Applications, Journal of Robotics and Computer Integrated Manufacturing, International Journal of Advanced Manufacturing Technology, Industrial Robot等国际学术期刊评审人。曾获上海交通大学优秀毕业生、美国3M公司创新奖一等奖、2008中国机械工业科学技术奖一等奖（排名第7）、2008上海市科技进步二等奖(排名第7)等多项荣誉和奖励。目前主要研究方向包括：1)图像分析与理解：目标检测与识别、图像/视频检索、智能视觉监控；2）三维重建：立体视觉、场景/目标三维建模、多目标运动分割、相机标定；3)智能(机器人)系统：机器学习、智能农业系统、视觉机器人系统。欢迎对计算机视觉、机器学习和智能机器人等领域感兴趣的广大学子报考，也欢迎到实验室交流或参与课题研究。图像与视觉计算研究组的主页是 http://ivc.tongji.edu.cn/</a>

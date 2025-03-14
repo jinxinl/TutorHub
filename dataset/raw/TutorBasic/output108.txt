@@ -1,0 +1,10 @@
+姓名:桂任舟
+职称:副教授
+学科:信息与通信工程学科
+专业:
+研究方向:
+导师类型:博导/硕导
+电子邮件:rzgui@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号电信大楼
+个人简介:一、个人基本情况 桂任舟，男，1973.9，副教授、博/硕士生导师。 德国克虏伯基金学者：获德国克虏伯基金资助，在德国从事雷达波形设计与雷达信号处理方面的研究工作。 美国哥伦比亚访问学者：获国家留学基金委资助，在美国哥伦比亚大学从事深度对抗学习、深度神经网络等方面研究。 二、在研项目（雷达部分负责人）  项目类型：国家自然科学基金委国家重大科研仪器研制项目 项目名称：多波动式岩体- 结构复合体内信息高精度采集系统 编号：4182707    金额：803.7 万元 起止年月：2019.1-2023.12    三、当前主要研究方向 人工智能、深度神经网络、对抗学习、大数据、系统设计。 （1）大数据：网络数据抓取、分布式存储、时空GIS显示，技术包括：Python、Matlab、C#、C++、SQL、NoSQL、MongoDB、Hadoop、 ArcGIS等软件方面。  研究内容包括：统计分析、深度神经网络、人工智能。 （2）民用雷达，涉及系统设计和集成，数据处理，主要技术包括：天线设计、射频电路、ARM、DSP、FPGA、USB接口等硬件方面。 研究内容包括：电磁波传播、透射、散射，小波分解、时频分析、信号检测估计等。 四、研究情况简介 2006.7武汉大学无线电物理专业博士毕业后入职同济大学，依托信息与通信工程系主要从事智能信号与信息处理研究。在自适应选频、跳频波形设计和神经网络等方面有多年的研究积累，在Radio Science、International Journal of Microwave and Wireless Technologies、ACTA PHYSIC A等国际期刊和电波科学学报、武汉大学学报等国内学报级期刊上以第一作者发表学术论文40余篇，被SCI、EI检索论文达20余篇。 五、代表性学术成就 第一作者发表40余篇高水平学术论文。其中： [1]Renzhuo Gui; , &quot;Utilizing Higher Moments to Detect Time-Varying Target in Radar Echo With Non-stationary Background ,&quot; International Journal of Microwave and Wireless Technologies v 8, n 2, p 215-219, March 1, 2016. 工程技术4区 IF 0.425   [2]Gui, R.Z.; , &quot;Adaptively selecting working frequency to reduce disturbances in high frequency radar,&quot; Acta Physica Polonica A ,vol. 119, no. 4, pp. 473-478 April 2011. 物理4区 IF0.553   [3] 桂任舟.利用二维恒虚警进行非均匀噪声背景下的目标检测[J].武汉大学学报：信息科学版,2012,37(3):354-357. 工程技术4区 IF 0.407   [4]Renzhuo Gui; Zijie Yang; , &quot;Application of Hopfield neural network for extracting Doppler spectrum from ocean echo,&quot; Radio Science ,vol. 41,no. 4, pp. RS4S90-1-6 July-Aug. 2006. 电信学3区 IF 1.387   [5] GUI Renzhou, “Application of adaptive beamformer based on weight iterative algorithm to suppress interferences ”,2008,30(4):597-600. 工程技术4区 IF 0.526   六、成果应用与转化情况 完成地波雷达接收机系统设计并已经产业化。 完成基于MongDB的大数据平台开发，并成功应用于长三角中小企业空间时空分布的智能城市规划领域。 完成基于隧道地下空间安全隐患雷达实时探测设备研制，正在产业化过程中。

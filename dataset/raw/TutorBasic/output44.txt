@@ -1,0 +1,10 @@
+姓名:孟淼
+职称:研究员
+学科:控制科学与工程学科
+专业:集成电路设计
+研究方向:低功耗集成电路设计
+导师类型:博导/硕导
+电子邮件:miaomeng@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号
+个人简介:个人教育与工作经历：2007/9-2011/8，美国威斯康星大学麦迪逊分校，电子工程学士2011/9-2013/2，美国哥伦比亚大学，电子工程硕士2014/9-2019/8，美国宾州州立大学，电子工程博士，导师：Prof. Mehdi Kiani2019/9-2020/12, 美国加州大学圣地亚哥分校，博士后，合作导师：Prof. Patrick Mercier2021/1-至今，同济大学，青年百人特聘研究员，博士生导师 科研与教学：主要研究方向为低功耗集成电路设计，可植入、可穿戴电子医疗设备，低功耗无线通信芯片与系统近五年发表国际高水平期刊及会议论文十余篇，其中分别在2019年和2021年以第一作者/通信作者在代表集成电路领域最高水平的ISSCC发表论文2篇。 社会兼职：IEEE会员担任如下期刊及会议审稿人：IEEE Transactions on Biomedical Circuits and Systems (TBIoCAS)IEEE Transactions on Biomedical Engineering (TBME)IEEE Transactions on Circuits and Systems I&amp;II (TCAS-I&amp;II)IEEE Sensors JournalIEEE International Symposium on Circuits and Systems (ISCAS)IEEE Biomedical Circuits and Systems Conference (BioCAS)

@@ -1,0 +1,6 @@
+numpy
+matplotlib
+networkx
+mysql.connector
+flask
+Flask_Session

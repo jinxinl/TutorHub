@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #FFFFFF,#c8c8c8); /* 更浅的蓝色渐变 */
+    background-attachment: fixed;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px; /* 可选：设置最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 透明背景色 */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* 将内容堆叠 */
+    align-items: flex-start; /* 左对齐 */
+    margin-bottom: 20px; /* 为下方内容留出空间 */
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* 搜索框和按钮垂直居中 */
+    width: 100%; /* 占据可用空间 */
+    max-width: 600px; /* 可选：设置搜索容器的最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    background-color: #f9f9f9; /* 为搜索容器添加背景色 */
+    padding: 15px; /* 添加内边距 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+#search-box {
+    flex: 1; /* 搜索框占据剩余空间 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF; /* 蓝色 */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px; /* 与搜索框之间的间距 */
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* 深蓝色 */
+}
+
+.user-center-icon {
+    position: absolute; /* 固定位置 */
+    top: 30px; /* 上方距离 */
+    right: 100px; /* 右方距离 */
+    font-size: 36px; /* 放大图标 */
+    color: #333;
+    border: 2px solid #000; /* 添加黑色边框 */
+    border-radius: 50%; /* 圆形边框 */
+    width: 60px; /* 设置图标的宽度 */
+    height: 60px; /* 设置图标的高度 */
+    display: flex; /* 设置为弹性盒子 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色透明度 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.user-center-icon a {
+    text-decoration: none;
+    color: inherit; /* 继承父元素颜色 */
+}
+
+.user-center-icon a:hover {
+    color: #007BFF; /* 悬停时颜色变化 */
+}

@@ -1,0 +1,10 @@
+姓名:张冬冬
+职称:教授
+学科:计算机科学与技术学科
+专业:计算机应用技术
+研究方向:图像处理、深度学习、模式识别、人工智能
+导师类型:博/硕导
+电子邮件:ddzhang@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号同济大学电信学院428室
+个人简介:2007年3月毕业于上海交通大学，获工学博士学位。2007年1月至2008年10月于香港中文大学从事博士后研究工作。2009年3月任同济大学讲师，2010年12月评为副教授，2017年12月评为教授。同济大学嵌入式系统与服务计算教育部重点实验室骨干教师。入选2009年《同济大学青年优秀人才培养行动计划》及2011年《同济大学青年英才计划》。获同济大学青年骨干教师出国研修项目资助于2014年8月-2015年2月在伦敦大学玛丽女王学院进行学术交流。 研究方向：图像处理、深度学习、模式识别、人工智能等 主持及参与的项目： 主持国家自然科学基金项目1项、上海科委科技创新领域重点项目课题1项、上海市自然基金项目1项、同济大学中央高校基本科研业务费专项资金项目1项；嵌入式系统与服务计算教育部重点实验室开放课题1项；负责实施完成国家发改委重大专项项目1项；参与973项目子课题1项。 研究成果： 在《IEEE Trans. On Circuit and System for Video Technology》、《IEEE Trans. On Consumer Electronic》、《Signal Processing: Image Communication》、《SPIE Journal of Optical Engineering》等国内外重要学术刊物上发表论文20多篇，SCI和EI收录20余次，他人引用70余次。参与提交MPEG国际标准提案4项，作为第一发明人获得美国发明专利授权1项和国家发明专利授权12项。 主要学术任职： YOCSEF上海AC委员， IEEE国际会议VCIP 2010技术程序委员会委员，国际期刊SPIE Journal of Optical Engineering、Signal Processing: Image Communication、Journal of Visual Communication and Image Representation，及国际会议IEEE International Conference on Image Processing、IEEE International Symposium on Circuits and Systems、IEEE International Conference on Multimedia and Expo等会议审稿人，SITP项目指导教师。 获得的奖励： 1. 2018年上海科技进步二等奖1项（排名第2）、科技发明奖1项（排名第14） 2. 2017年同济大学教学成果奖二等奖1项  3. 2014年CERNET二十年建设中做出突出贡献的先进个人  4. 2009年同济大学电子与信息工程学院青年教师讲课比赛特等奖  5. 2009年上海市优秀博士学位论文奖 

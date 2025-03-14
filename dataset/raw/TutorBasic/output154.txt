@@ -1,0 +1,10 @@
+姓名:魏忠祥
+职称:副教授
+学科:通信与信息工程学科
+专业:通信与信息系统
+研究方向:高能效通信， 匿名通信，IoT，算法设计与优化，大规模MIMO
+导师类型:硕导
+电子邮件:z_wei@tongji.edu.cn
+联系电话:
+通讯地址:上海市曹安公路4800号智信楼708
+个人简介:   2017年获英国利物浦大学博士学位，曾任新加坡A*STAR科技研究局助理研究员（2016.3-2017.3），英国伦敦大学学院博士后研究员（2018.3-2021.2）。2021年入职同济大学电子与信息工程学院，信息与通信工程系，任职副教授。  在高能效通信、匿名通信、IoT等研究方向，取得了一系列高水平科研成果及一定的国际学术影响力。在IEEE刊物发表论文60余篇，集中在IEEE Journal on Selected Areas in Communications（JSAC）、IEEE Transactions on Wireless Communications（TWC）、IEEE Transactions on Communications（TCOM）、IEEE Communications Magazine（ComMag）、IEEE Wireless Communication（Wireless Commun）等行业顶尖期刊。入选ESI高被引论文1篇，Google Scholar H-指数文章13篇，i10指数文章16篇；主持/参与了中、英、新加坡等国家/省部级军民科研项目9项，包括国家自然科学基金（青年）项目、英国工程和自然科学研究委员会项目、新加坡A*STAR研究项目、中国华为合作项目等，共计研究经费人民币800余万。获评多个高水平人才项目，活跃于业界学术活动：  •上海市领军人才（青年）、上海高等教育蓄揽人才；  •澳大利亚卧龙岗大学荣誉副教授；  •新加坡A*STAR附属研究奖；  •获国家留学基金委优秀自费留学生奖，利物浦大学全额博士奖学金；  •信号处理领域旗舰会议IEEE ICASSP’22（新加坡）的special session联席主席，通信领域老牌国际会议IEEE VTC’22（芬兰）的technical track联席主席，IEEE ICC’19-22、GLOBECOM’18-22、PIMRC’20、ICNC’18-19等多个国际旗舰会议的技术委员会委员。  • IEEE TWC、IEEE TCOM、IEEE TSP、IEEE ComMag、IEEE JSAC、IEEE WCL、IEEE TVT、IEEE/ACM ToN等十余个顶级期刊的审稿人。IEEE TWC主编颁发“优秀审稿人”（少于2%）。  •通信领域国际会议IEEE ICASSP’22（新加坡）、IEEE SPAWC’21（线上）、SPIE’21（圣迭戈）、IEEE VTC’17（悉尼）、IEEE ICCC’15（深圳）特邀论文 

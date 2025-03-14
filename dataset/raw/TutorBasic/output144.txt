@@ -1,0 +1,10 @@
+姓名:王平
+职称:副教授
+学科:信息与通信工程学科
+专业:信号与信息处理
+研究方向:智能网联汽车、车联网、车路协同
+导师类型:博导/硕导
+电子邮件:pwang@tongji.edu.cn
+联系电话:0086(0)21-69583671
+通讯地址:上海市曹安公路4800号电信楼733室
+个人简介:研究领域：智能网联汽车：基于AI的目标检测与跟踪，基于强化学习的端到端自动驾驶，智能驾驶数据采集与回放车联网：协议栈开发，V2X应用场景开发与测试，协作式自动驾驶车路协同：车路协同感知，本地动态地图生成，全息感知路口构建 课程：车联网 承担、参与项目：1.基于场端的自主泊车（AVP based on MEC）2.基于V2X的车辆编队自动驾驶（CACC）3.5G远程遥控驾驶（ToD based on 5G）4.汽车产品级C-V2X协议栈开发（C-V2X Protocol）发表论文： 1.Chao Wang; Xun Li; Ping  Wang*; Geyong Min, “Combining Non-orthogonal Transmission with  Network-Coded Cooperation: Performance Analysis over  Nakagami-m Fading Channels”, IEEE Transactions on Communications,  July 2020, Volume: 68, Issue: 7, 4073 – 4088.  2.Ping Wang,  Yuqi Chen, Chao Wang, Fuqiang Liu, Jia Hu, Nguyen Ngoc Van, “Development  and verification of cooperative adaptive cruise control via LTE-V”, IET Intelligent Transport Systems, Vol. 13(6), pp. 991-1000, June  2019, doi: 10.1049/iet-its.2018.5475.  3.Ping Wang, Meiyan  Wu, Chao Wang, Xinhong Wang, Fuqiang Liu, Nguyen Ngoc Van, Aiwei Yin,  “</a>Location-Partition-Based Channel Allocation and  Power Control Methods for C-V2X Communication Networks”, Wireless  Networks, 26, pp.1563–1575, 2020, DOI 10.1007/s11276-019-02206-0.  4.Rui Wang ,  Ruyu Li, Erwu Liu, and Ping Wang*, “Performance Analysis  and Optimization of Caching Placement in Heterogeneous Wireless Networks”, IEEE Communications Letters, Vol. 23(10), Oct. 2019, pp. 1883-1887,  DOI: 10.1109/LCOMM.2019.2929131</a>.  5.Chao Wang，Ping Wang*，Fuqiang  Liu, “New Achievable Sum Degrees of Freedom in Half-duplex Single-antenna  Multi-user Multi-hop Networks”, IEEE Transactions on Communications,  Vol. 66(2), pp. 2840-2854, July 2018, DOI: 10.1109/TCOMM.2018.2808354. 专著1.车联网权威指南 标准、技术及应用，机械工业出版社，ISBN：9787111601784 专利1.一种基于车路协同的道路车辆定位及感知方法和装置，发明专利，申请号：CN202010457794.X，申请日：2020-5-262.一种面向路口的智能化本地动态地图实现系统及实现方法, 发明专利，申请号：201810856907.6，申请日：2018-7-313.一种虚实结合的车联网应用场景测试系统与方法，发明专利，申请号：201711052319.9，申请日：2017-10-304.一种车辆紧急安全信息的低时延高可靠传输方法，申请号：201611088379.1，申请日：2016-12-01

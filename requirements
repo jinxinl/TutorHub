@@ -4,3 +4,4 @@ networkx
 mysql.connector
 flask
 Flask_Session
+openai

@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录界面</title>
+    <title>登录 - 研途导航</title>
     <link rel="stylesheet" href="/static/css/style_login.css">
 </head>
 <body>
+    <!-- 网站 Logo + 标题 -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="研途导航 Logo" class="logo">
+            <span class="site-title">研途导航</span>
+        </div>
+    </header>
+
+    <!-- 登录框 -->
     <div class="login-container">
         <h2>登录</h2>
-        <form action="#" method="post">
+        <form action="/login" method="post">
             <div class="input-group">
                 <label for="username">用户名</label>
                 <input type="text" id="username" name="username" placeholder="请输入用户名" required>
@@ -32,5 +41,3 @@
     </div>
 </body>
 </html>
-
-

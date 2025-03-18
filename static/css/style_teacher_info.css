@@ -1,93 +1,204 @@
-/* 整体样式 */
+/* 全局样式 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(to bottom, #4A90E2, #f4f7fc); /* 由蓝色过渡到浅色 */
     margin: 0;
     padding: 0;
+}
+
+
+/* 顶部导航栏 */
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-}
-
-/* 主容器 */
-.container {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1000px; /* 进一步增加宽度 */
-    max-width: 100%;
-    box-sizing: border-box;
-    height: 95vh; /* 进一步增加高度 */
-    overflow-y: auto; /* 垂直滚动条 */
-    display: flex;
-    flex-direction: column;
+    padding: 15px 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 教师信息容器 */
-.teacher-info-container {
-    background-color: #f9f9f9; /* 浅色背景 */
+/* Logo 位置 */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 导航栏菜单 */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* 用户登录信息 */
+.user-auth a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.user-auth a:hover {
+    color: #0056b3;
+}
+
+/* 导师信息容器 */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;  /* 确保主体是白色 */
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 100%;
-    height: auto; /* 高度自适应 */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* 增加底部间距 */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* 标题样式 */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
 }
 
 /* 信息框 */
 .info-box {
-    background-color: #ffffff; /* 浅色方框 */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* 增加底部间距 */
+    text-align: left;
 }
 
 /* 每行信息样式 */
 .info-line {
-    margin-bottom: 10px;
-    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 15px;
     position: relative;
 }
 
-.info-line:before {
-    content: '';
+/* 小竖线样式 */
+.vertical-bar {
     width: 5px;
-    height: 100%;
+    height: 20px;
     background-color: #007BFF;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
+    margin-right: 10px;
+    border-radius: 3px;
 }
 
-/* 图片容器 */
-.graphs-container {
-    display: block;
-    overflow-y: auto; /* 垂直滚动条 */
+/* 字段名称 */
+.bold-label {
+    font-weight: bold;
+    color: #0056b3;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* 字段内容 */
+.info-content {
+    font-size: 16px;
+    color: #333;
+}
+
+/* 个人简介 */
+.profile-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
     margin-top: 20px;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    height: auto; /* 高度自适应 */
+}
+
+/* **让"个人简介"变蓝** */
+.profile-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #0056b3;  /* ✅ 变蓝 */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* **加上竖线，与其他字段保持一致** */
+.profile-title::before {
+    content: '';
+    width: 5px;
+    height: 20px;
+    background-color: #007BFF;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.profile-content {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* 关系查看链接 */
+.view-relations {
+    margin-top: 20px;
+}
+
+.view-relations a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view-relations a:hover {
+    text-decoration: underline;
+}
+
+/* 图表容器 */
+.graphs-container {
+    display: none; /* 默认隐藏 */
+    margin-top: 20px;
 }
 
 .graph {
     margin-bottom: 20px;
-    width: 100%; /* 设置容器的宽度 */
-    height: 600px; /* 进一步增加高度 */
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    text-align: center;
 }
 
 .graph img {
-    width: 100%; /* 图片占满容器的宽度 */
-    height: 100%; /* 图片占满容器的高度 */
-    object-fit: contain; /* 保持纵横比并尽可能大 */
-    display: block;
+    max-width: 100%;
+    height: auto;
 }

@@ -15,11 +15,6 @@ function checkMembership() {
                 document.getElementById('tutor-rel-graph').src = 'data:image/png;base64,' + data.tutor_rel_graph;
             } else if (data.status === 'error') {
                 alert(data.message);
-                if (data.redirect) {
-                    window.location.href = data.redirect;
-                } else {
-                    window.history.back();
-                }
             }
         })
         .catch(error => {

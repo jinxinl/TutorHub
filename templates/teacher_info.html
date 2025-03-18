@@ -3,23 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>教师信息</title>
+    <title>导师信息 - 研途导航</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style_teacher_info.css') }}">
 </head>
 <body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo">
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a id="userLink" href="/user_center">个人中心</a>
+                <a id="logoutLink" href="/logout">退出</a>
+            {% else %}
+                <a id="loginLink" href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- 导师信息展示 -->
     <div class="container">
-        <div class="teacher-info-container">
-            <div class="info-box">
-                {% for line in info.split('\n') %}
-                    <div class="info-line">{{ line }}</div>
-                {% endfor %}
-            </div>
-            <div class="view-relations-link">
-                <a href="javascript:void(0);" onclick="checkMembership()">点击查看导师学术关系</a>
-            </div>
+        <h2 class="title">导师信息</h2>
+        <div class="info-box">
+            {% for line in info.split('\n') %}
+                {% if "个人简介" not in line %}
+                <div class="info-line">
+                    <span class="vertical-bar"></span>
+                    <span class="bold-label">{{ line.split(': ')[0] }}：</span>
+                    <span class="info-content">{{ line.split(': ')[1] }}</span>
+                </div>
+                {% endif %}
+            {% endfor %}
         </div>
 
-        <!-- 图表容器 -->
+        <!-- 个人简介部分 -->
+        {% if "个人简介" in info %}
+        <div class="profile-box">
+            <h3 class="profile-title">个人简介</h3>
+            <p class="profile-content">
+                {% for line in info.split('\n') %}
+                    {% if "个人简介" in line %}
+                        {{ line.split(': ')[1] }}
+                    {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+        {% endif %}
+
+        <div class="view-relations">
+            <a href="javascript:void(0);" onclick="checkMembership()">点击查看导师学术关系</a>
+        </div>
+
+        <!-- 学术关系图，默认隐藏 -->
         <div class="graphs-container" id="graphs-container" style="display: none;">
             <div class="graph">
                 <img id="alumni-graph" src="" alt="校友关系">

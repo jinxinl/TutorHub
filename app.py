@@ -3,7 +3,7 @@ from flask import Flask, request, redirect, render_template, jsonify, url_for, s
 from flask_session import Session
 import operateDB
 import generate_network
-
+from datetime import datetime, timedelta
 import json
 
 app = Flask(__name__,static_folder='static')
@@ -16,38 +16,41 @@ Session(app)
 '''初始界面'''
 @app.route('/')
 def init():
-    return redirect('/login')
+    return redirect('/index')
     #return redirect('/main')
+'''首页'''
+@app.route('/index', methods=['GET'])
+def home_page():
+    return render_template('index.html')
 
 
 '''登录界面'''
 @app.route('/login',methods=['Get','POST'])
 def login():
-    if request.method =='POST':
+    if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
 
-        print("input username: ",username)
-        print("input password: ",password)
+        print("input username: ", username)
+        print("input password: ", password)
 
-        '''验证登陆是否成功'''
-        sql = f"select * from User where UserName = '{username}'"
-        result_tup = operateDB.db_interface(op="query",sql=sql)
-        if len(result_tup) == 0: #查找不到用户
+        # 查询数据库验证用户
+        sql = f"SELECT * FROM User WHERE UserName = '{username}'"
+        result_tup = operateDB.db_interface(op="query", sql=sql)
+
+        if len(result_tup) == 0:  # 用户不存在
             return '<script> alert("用户不存在！");window.location.href="/login";</script>'
-        else: #找的到用户
-            #print(result_tup)
-            real_password  =result_tup[0][2] #得到用户在数据库中的密码
-            if password == real_password: #密码与用户名匹配
-                #验证成功，存储用户信息到会话中
+        else:
+            real_password = result_tup[0][2]  # 获取数据库中的密码
+            if password == real_password:  # 匹配密码
                 session['username'] = username
                 session['password'] = password
                 session['userid'] = result_tup[0][0]
-                return redirect('/main')
-            else: #密码与用户名不匹配
+                return redirect("/")
+            else:
                 return '<script> alert("密码输入错误！");window.location.href="/login";</script>'
 
-    return render_template('login.html')
+    return render_template("login.html")
 
 
 '''注册界面'''
@@ -86,14 +89,11 @@ def register():
     return render_template('register.html')
 
 '''登出逻辑'''
-@app.route('/logout')
+@app.route("/logout")
 def logout():
-    session.pop('username',None)
-    session.pop('userid',None)
-    session.pop('password',None)
-
-    #重定向到登陆界面
-    return redirect(url_for('login'))
+    session.pop('username', None)
+    session.pop('userid', None)
+    return redirect("/")
 
 
 '''响应搜索按钮点击事件'''
@@ -175,7 +175,6 @@ def check_membership():
         return Response(json.dumps({
             'status': 'error',
             'message': '请先注册会员！',
-            'redirect': '/main'
         }), mimetype='application/json; charset=utf-8')
     else:
         is_member_1 = result_tup[0][-1]
@@ -219,26 +218,24 @@ def check_membership():
 '''个人中心'''
 @app.route('/user_center')
 def user_center():
-    #检查用户是否已登陆
     if 'username' not in session:
-        return redirect(url_for('/login')) #若未登录，重定向到登录界面
+        return redirect(url_for('login'))  # 未登录则跳转
 
-    #获取登录时的用户名与密码
     username = session.get('username')
-    password = session.get('password')
-    userid = session.get('userid')
-    is_member = False #默认为不是会员（未注册会员/会员已过期）
+    role = session.get('role', '普通用户')  # 角色默认值
+    password = session.get('password')  # 确保获取密码
+    membership_expiry = session.get('membership_expiry', '无')
 
-    sql = f"select * from Member where MemberID = {userid}"
-    result_tup = operateDB.db_interface(op="query", sql=sql)
+    # 从数据库查询 Role 和 MembershipExpiry
+    sql = f"SELECT Role, MembershipExpiry FROM user WHERE UserID = {session.get('userid')}"
+    result = operateDB.db_interface(op="query", sql=sql)
+    if result:
+        role, membership_expiry = result[0]
+        session['role'] = role
+        session['membership_expiry'] = membership_expiry
 
-    #是会员且未过期
-    if len(result_tup)!=0:
-        is_member_1 = result_tup[0][-1]
-        if is_member_1 == 'yes':
-            is_member = True
+    return render_template('user_center.html', username=username, password=password,role=role, membership_expiry=membership_expiry)
 
-    return render_template('user_center.html',username=username,password=password,is_member=is_member)
 
 '''提交反馈'''
 @app.route('/submit_feedback', methods=['POST'])
@@ -260,11 +257,46 @@ def submit_feedback():
     operateDB.db_interface(op="insert_data", table_name="Advice", data=data)
     return jsonify({'success': True, 'message': '反馈提交成功'})
 
+'''注册会员'''
+@app.route('/register_member', methods=['POST'])
+def register_member():
+    if 'userid' not in session:
+        return jsonify({'status': 'error', 'message': '请先登录'}), 401
 
-'''主界面'''
-@app.route('/main')
-def admin():
-    return render_template('main.html')
+    userid = session.get('userid')
+    print(userid)
+    data = request.json
+    duration = int(data.get('duration', 1))  # 会员时长（单位：月）
+
+    # 计算会员到期时间
+    current_time = datetime.now()
+    expiry_date = current_time + timedelta(days=30 * duration)
+    expiry_date_str = expiry_date.strftime('%Y-%m-%d')
+
+    # 更新数据库，将 Role 设为 "member" 并存储到期时间
+    sql = f"UPDATE user SET Role = 'member', MembershipExpiry = '{expiry_date_str}' WHERE UserID = {userid}"
+    operateDB.db_interface(op="update", sql=sql)
+
+    # 更新 session
+    session['role'] = 'member'
+    session['membership_expiry'] = expiry_date_str
+
+    return jsonify({'status': 'success', 'message': '注册成功', 'expiry': expiry_date_str})
+
+'''排名查询'''
+@app.route('/ranking')
+def ranking():
+    return render_template('ranking.html')
+
+'''学术资源'''
+@app.route('/resources')
+def resources():
+    return render_template('resources.html')
+
+'''联系我们'''
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run()

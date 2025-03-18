@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>院校排名 - 研途导航</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_ranking.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+ <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo"> <!-- 预留 logo -->
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a id="userLink" href="/user_center">个人中心</a>
+                <a id="logoutLink" href="/logout">退出</a>
+            {% else %}
+                <a id="loginLink" href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- 页面内容 -->
+    <div class="container">
+        <h2 class="title">全国高校排名</h2>
+
+        <!-- 搜索框 -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="输入院校名称搜索">
+        </div>
+
+        <!-- 排名表格 -->
+<table class="ranking-table">
+    <thead>
+        <tr>
+            <th>中国排名</th>
+            <th>世界排名</th>
+            <th>学校名称</th>
+            <th>地区</th>
+            <th>成立时间</th>
+            <th>办学性质</th>
+        </tr>
+    </thead>
+    <tbody id="rankingTable">
+        <tr>
+            <td>1</td>
+            <td>14</td>
+            <td><a href="https://www.pku.edu.cn/" target="_blank">北京大学</a></td>
+            <td>北京</td>
+            <td>1898年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>17</td>
+            <td><a href="https://www.hku.hk/" target="_blank">香港大学</a></td>
+            <td>香港</td>
+            <td>1911年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>20</td>
+            <td><a href="https://www.tsinghua.edu.cn/" target="_blank">清华大学</a></td>
+            <td>北京</td>
+            <td>1911年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>36</td>
+            <td><a href="https://www.cuhk.edu.hk/" target="_blank">香港中文大学</a></td>
+            <td>香港</td>
+            <td>1963年10月17日</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>39</td>
+            <td><a href="https://www.fudan.edu.cn/" target="_blank">复旦大学</a></td>
+            <td>上海</td>
+            <td>1905年6月29日</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>45</td>
+            <td><a href="https://www.sjtu.edu.cn/" target="_blank">上海交通大学</a></td>
+            <td>上海</td>
+            <td>1896年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>47</td>
+            <td><a href="https://www.ust.hk/" target="_blank">香港科技大学</a></td>
+            <td>香港</td>
+            <td>1991年10月</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>47</td>
+            <td><a href="https://www.zju.edu.cn/" target="_blank">浙江大学</a></td>
+            <td>浙江</td>
+            <td>1897年5月21日</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>57</td>
+            <td><a href="https://www.polyu.edu.hk/" target="_blank">香港理工大学</a></td>
+            <td>香港</td>
+            <td>1937年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>62</td>
+            <td><a href="https://www.cityu.edu.hk/" target="_blank">香港城市大学</a></td>
+            <td>香港</td>
+            <td>1984年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>68</td>
+            <td><a href="https://www.ntu.edu.tw/" target="_blank">台湾大学</a></td>
+            <td>台湾</td>
+            <td>1928年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>133</td>
+            <td><a href="https://www.ustc.edu.cn/" target="_blank">中国科学技术大学</a></td>
+            <td>安徽</td>
+            <td>1958年9月20日</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>145</td>
+            <td><a href="https://www.nju.edu.cn/" target="_blank">南京大学</a></td>
+            <td>江苏</td>
+            <td>1902年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>192</td>
+            <td><a href="https://www.tongji.edu.cn/" target="_blank">同济大学</a></td>
+            <td>上海</td>
+            <td>1907年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>194</td>
+            <td><a href="https://www.whu.edu.cn/" target="_blank">武汉大学</a></td>
+            <td>武汉</td>
+            <td>1928年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>210</td>
+            <td><a href="https://www.nthu.edu.tw/" target="_blank">台湾清华大学</a></td>
+            <td>台湾</td>
+            <td>1909年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>215</td>
+            <td><a href="https://www.ncku.edu.tw/" target="_blank">台湾成功大学</a></td>
+            <td>台湾</td>
+            <td>1931年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>219</td>
+            <td><a href="https://www.nycu.edu.tw/" target="_blank">台湾阳明交通大学</a></td>
+            <td>台湾</td>
+            <td>1896年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>245</td>
+            <td><a href="https://www.um.edu.mo/" target="_blank">澳门大学</a></td>
+            <td>澳门</td>
+            <td>1981年3月</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>252</td>
+            <td><a href="https://www.hit.edu.cn/" target="_blank">哈尔滨工业大学</a></td>
+            <td>哈尔滨</td>
+            <td>1920年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>252</td>
+            <td><a href="https://www.hkbu.edu.hk/" target="_blank">香港浸会大学</a></td>
+            <td>香港</td>
+            <td>1956年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>269</td>
+            <td><a href="https://www.tju.edu.cn/" target="_blank">天津大学</a></td>
+            <td>天津</td>
+            <td>1895年10月2日</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>271</td>
+            <td><a href="https://www.bnu.edu.cn/" target="_blank">北京师范大学</a></td>
+            <td>北京</td>
+            <td>1902年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>284</td>
+            <td><a href="https://www.sustech.edu.cn/" target="_blank">南方科技大学</a></td>
+            <td>深圳</td>
+            <td>2010年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>295</td>
+            <td><a href="https://www.xjtu.edu.cn/" target="_blank">西安交通大学</a></td>
+            <td>西安</td>
+            <td>1896年</td>
+            <td>公办</td>
+        </tr>
+        <tr>
+    <td>26</td>
+    <td>300</td>
+    <td><a href="https://www.hust.edu.cn/" target="_blank">华中科技大学</a></td>
+    <td>武汉</td>
+    <td>1952年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>27</td>
+    <td>302</td>
+    <td><a href="https://www.bit.edu.cn/" target="_blank">北京理工大学</a></td>
+    <td>北京</td>
+    <td>1940年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>28</td>
+    <td>316</td>
+    <td><a href="https://www.sdu.edu.cn/" target="_blank">山东大学</a></td>
+    <td>济南</td>
+    <td>1901年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>29</td>
+    <td>331</td>
+    <td><a href="https://www.sysu.edu.cn/" target="_blank">中山大学</a></td>
+    <td>广州</td>
+    <td>1924年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>30</td>
+    <td>336</td>
+    <td><a href="https://www.scu.edu.cn/" target="_blank">四川大学</a></td>
+    <td>成都</td>
+    <td>1896年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>31</td>
+    <td>362</td>
+    <td><a href="https://www.xmu.edu.cn/" target="_blank">厦门大学</a></td>
+    <td>厦门</td>
+    <td>1921年4月6日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>32</td>
+    <td>377</td>
+    <td><a href="https://www.nankai.edu.cn/" target="_blank">南开大学</a></td>
+    <td>天津</td>
+    <td>1919年2月10日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>33</td>
+    <td>385</td>
+    <td><a href="https://www.scut.edu.cn/" target="_blank">华南理工大学</a></td>
+    <td>广州</td>
+    <td>1952年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>34</td>
+    <td>392</td>
+    <td><a href="https://www.ntust.edu.tw/" target="_blank">台湾科技大学</a></td>
+    <td>台湾</td>
+    <td>1974年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>35</td>
+    <td>396</td>
+    <td><a href="https://www.neu.edu.cn/" target="_blank">东北大学</a></td>
+    <td>沈阳</td>
+    <td>1923年4月</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>36</td>
+    <td>425</td>
+    <td><a href="https://www.ntut.edu.tw/" target="_blank">台北科技大学</a></td>
+    <td>台湾</td>
+    <td>1912年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>37</td>
+    <td>428</td>
+    <td><a href="https://www.seu.edu.cn/" target="_blank">东南大学</a></td>
+    <td>南京</td>
+    <td>1902年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>38</td>
+    <td>430</td>
+    <td><a href="https://www.bjut.edu.cn/" target="_blank">北京科技大学</a></td>
+    <td>北京</td>
+    <td>1952年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>39</td>
+    <td>431</td>
+    <td><a href="https://www.csun.edu/" target="_blank">中南大学</a></td>
+    <td>长沙</td>
+    <td>2000年4月29日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>40</td>
+    <td>448</td>
+    <td><a href="https://www.dlut.edu.cn/" target="_blank">大连理工大学</a></td>
+    <td>大连</td>
+    <td>1949年4月15日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>41</td>
+    <td>448</td>
+    <td><a href="https://www.hnu.edu.cn/" target="_blank">湖南大学</a></td>
+    <td>长沙</td>
+    <td>1926年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>42</td>
+    <td>451</td>
+    <td><a href="https://www.uestc.edu.cn/" target="_blank">电子科技大学</a></td>
+    <td>成都</td>
+    <td>1956年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>43</td>
+    <td>452</td>
+    <td><a href="https://www.buaa.edu.cn/" target="_blank">北京航空航天大学</a></td>
+    <td>北京</td>
+    <td>1952年10月25日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>44</td>
+    <td>452</td>
+    <td><a href="https://www.ntnu.edu.tw/" target="_blank">台湾师范大学</a></td>
+    <td>台湾</td>
+    <td>1922年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>45</td>
+    <td>464</td>
+    <td><a href="https://www.must.edu.mo/" target="_blank">澳门科技大学</a></td>
+    <td>澳门</td>
+    <td>2000年3月</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>46</td>
+    <td>484</td>
+    <td><a href="https://www.cau.edu.cn/" target="_blank">中国农业大学</a></td>
+    <td>北京</td>
+    <td>1905年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>47</td>
+    <td>485</td>
+    <td><a href="https://www.nsysu.edu.tw/" target="_blank">国立中山大学</a></td>
+    <td>台湾</td>
+    <td>1924年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>48</td>
+    <td>489</td>
+    <td><a href="https://www.cqu.edu.cn/" target="_blank">重庆大学</a></td>
+    <td>重庆</td>
+    <td>1929年10月12日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>49</td>
+    <td>489</td>
+    <td><a href="https://www.shu.edu.cn/" target="_blank">上海大学</a></td>
+    <td>上海</td>
+    <td>1994年5月27日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>50</td>
+    <td>497</td>
+    <td><a href="https://www.jlu.edu.cn/" target="_blank">吉林大学</a></td>
+    <td>长春</td>
+    <td>1946年</td>
+    <td>公办</td>
+</tr>
+
+<tr>
+    <td>51</td>
+    <td>501</td>
+    <td><a href="https://www.ecnu.edu.cn/" target="_blank">华东师范大学</a></td>
+    <td>上海</td>
+    <td>1951年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>52</td>
+    <td>508</td>
+    <td><a href="https://www.szu.edu.cn/" target="_blank">深圳大学</a></td>
+    <td>深圳</td>
+    <td>1983年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>53</td>
+    <td>511</td>
+    <td><a href="https://www.zzu.edu.cn/" target="_blank">郑州大学</a></td>
+    <td>郑州</td>
+    <td>1956年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>54</td>
+    <td>547</td>
+    <td><a href="https://www.nwpu.edu.cn/" target="_blank">西北工业大学</a></td>
+    <td>西安</td>
+    <td>1938年10月</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>55</td>
+    <td>565</td>
+    <td><a href="https://www.njust.edu.cn/" target="_blank">南京理工大学</a></td>
+    <td>南京</td>
+    <td>1953年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>56</td>
+    <td>580</td>
+    <td><a href="https://www.jnu.edu.cn/" target="_blank">暨南大学</a></td>
+    <td>广州</td>
+    <td>1906年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>57</td>
+    <td>601-610</td>
+    <td><a href="https://www.nccu.edu.tw/" target="_blank">台湾政治大学</a></td>
+    <td>台湾</td>
+    <td>1927年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>58</td>
+    <td>611-620</td>
+    <td><a href="https://www.cmuh.edu.tw/" target="_blank">台北医学大学</a></td>
+    <td>台湾</td>
+    <td>1960年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>59</td>
+    <td>621-630</td>
+    <td><a href="https://www.ruc.edu.cn/" target="_blank">中国人民大学</a></td>
+    <td>北京</td>
+    <td>1937年8月</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>60</td>
+    <td>631-640</td>
+    <td><a href="https://www.cgu.edu.tw/" target="_blank">长庚大学</a></td>
+    <td>台湾</td>
+    <td>1987年4月</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>61</td>
+    <td>631-640</td>
+    <td><a href="https://www.cup.edu.cn/" target="_blank">中国石油大学（北京）</a></td>
+    <td>北京</td>
+    <td>1953年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>62</td>
+    <td>641-650</td>
+    <td><a href="https://www.ecust.edu.cn/" target="_blank">华东理工大学</a></td>
+    <td>上海</td>
+    <td>1952年10月25日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>63</td>
+    <td>641-650</td>
+    <td><a href="https://www.ncu.edu.tw/" target="_blank">国立中央大学</a></td>
+    <td>台湾</td>
+    <td>1915年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>64</td>
+    <td>641-650</td>
+    <td><a href="https://www.suda.edu.cn/" target="_blank">苏州大学</a></td>
+    <td>苏州</td>
+    <td>1900年5月18日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>65</td>
+    <td>661-670</td>
+    <td><a href="https://www.nchu.edu.tw/" target="_blank">国立中兴大学</a></td>
+    <td>台湾</td>
+    <td>1919年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>66</td>
+    <td>681-690</td>
+    <td><a href="https://www.cumt.edu.cn/" target="_blank">中国矿业大学</a></td>
+    <td>徐州</td>
+    <td>1909年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>67</td>
+    <td>701-710</td>
+    <td><a href="https://www.buct.edu.cn/" target="_blank">北京化工大学</a></td>
+    <td>北京</td>
+    <td>1958年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>68</td>
+    <td>711-720</td>
+    <td><a href="https://www.ln.edu.hk/" target="_blank">香港岭南大学</a></td>
+    <td>香港</td>
+    <td>1888年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>69</td>
+    <td>711-720</td>
+    <td><a href="https://www.naa.edu.cn/" target="_blank">南京农业大学</a></td>
+    <td>南京</td>
+    <td>1902年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>70</td>
+    <td>721-730</td>
+    <td><a href="https://www.lzu.edu.cn/" target="_blank">兰州大学</a></td>
+    <td>兰州</td>
+    <td>1909年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>71</td>
+    <td>761-770</td>
+    <td><a href="https://www.nuaa.edu.cn/" target="_blank">南京航空航天大学</a></td>
+    <td>南京</td>
+    <td>1952年10月</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>72</td>
+    <td>771-780</td>
+    <td><a href="https://www.cug.edu.cn/" target="_blank">中国地质大学（武汉）</a></td>
+    <td>武汉</td>
+    <td>1952年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>73</td>
+    <td>801-850</td>
+    <td><a href="https://www.auc.edu.tw/" target="_blank">台湾亚洲大学</a></td>
+    <td>台湾</td>
+    <td>2001年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>74</td>
+    <td>801-850</td>
+    <td><a href="https://www.bjtu.edu.cn/" target="_blank">北京工业大学</a></td>
+    <td>北京</td>
+    <td>1960年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>75</td>
+    <td>801-850</td>
+    <td><a href="https://www.hua.edu.cn/" target="_blank">华中农业大学</a></td>
+    <td>武汉</td>
+    <td>1898年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>76</td>
+    <td>801-850</td>
+    <td><a href="https://www.ouc.edu.cn/" target="_blank">中国海洋大学</a></td>
+    <td>青岛</td>
+    <td>1924年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>77</td>
+    <td>801-850</td>
+    <td><a href="https://www.whut.edu.cn/" target="_blank">武汉理工大学</a></td>
+    <td>武汉</td>
+    <td>1898年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>78</td>
+    <td>851-900</td>
+    <td><a href="https://www.dhu.edu.cn/" target="_blank">东华大学</a></td>
+    <td>上海</td>
+    <td>1951年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>79</td>
+    <td>851-900</td>
+    <td><a href="https://www.nwafu.edu.cn/" target="_blank">西北农林科技大学</a></td>
+    <td>杨凌</td>
+    <td>1934年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>80</td>
+    <td>901-950</td>
+    <td><a href="https://www.bjtu.edu.cn/" target="_blank">北京交通大学</a></td>
+    <td>北京</td>
+    <td>1896年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>81</td>
+    <td>901-950</td>
+    <td><a href="https://www.bupt.edu.cn/" target="_blank">北京邮电大学</a></td>
+    <td>北京</td>
+    <td>1955年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>82</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.ciu.edu.tw/" target="_blank">长荣大学</a></td>
+    <td>台湾</td>
+    <td>1865年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>83</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.cycu.edu.tw/" target="_blank">台湾中原大学</a></td>
+    <td>台湾</td>
+    <td>1955年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>84</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.hbeu.edu.cn/" target="_blank">哈尔滨工程大学</a></td>
+    <td>哈尔滨</td>
+    <td>1953年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>85</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.hhu.edu.cn/" target="_blank">河海大学</a></td>
+    <td>南京</td>
+    <td>1915年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>86</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.jiangnan.edu.cn/" target="_blank">江南大学</a></td>
+    <td>无锡</td>
+    <td>1946年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>87</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.zufe.edu.cn/" target="_blank">南京师范大学</a></td>
+    <td>南京</td>
+    <td>1902年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>88</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.ncyu.edu.tw/" target="_blank">国立中正大学</a></td>
+    <td>台湾</td>
+    <td>1939年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>89</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.nwu.edu.cn/" target="_blank">西北大学</a></td>
+    <td>西安</td>
+    <td>1902年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>90</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.swu.edu.cn/" target="_blank">西南大学</a></td>
+    <td>重庆</td>
+    <td>1906年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>91</td>
+    <td>1001-1200</td>
+    <td><a href="https://www.xjtlu.edu.cn/" target="_blank">西交利物浦大学</a></td>
+    <td>苏州</td>
+    <td>2006年5月</td>
+    <td>中外合作办学</td>
+</tr>
+<tr>
+    <td>92</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.bfsu.edu.cn/" target="_blank">北京外国语大学</a></td>
+    <td>北京</td>
+    <td>1941年9月24日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>93</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.bucm.edu.cn/" target="_blank">北京中医药大学</a></td>
+    <td>北京</td>
+    <td>1956年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>94</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.cyut.edu.tw/" target="_blank">朝阳科技大学</a></td>
+    <td>台湾</td>
+    <td>1994年4月14日</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>95</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.cupl.edu.cn/" target="_blank">中国政法大学</a></td>
+    <td>北京</td>
+    <td>1952年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>96</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.fcu.edu.tw/" target="_blank">逢甲大学</a></td>
+    <td>台湾</td>
+    <td>1961年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>97</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.fju.edu.tw/" target="_blank">中国台湾辅仁大学</a></td>
+    <td>台湾</td>
+    <td>1925年</td>
+    <td>民办</td>
+</tr>
+<tr>
+    <td>98</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.dhu.edu.tw/" target="_blank">国立东华大学</a></td>
+    <td>台湾</td>
+    <td>1951年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>99</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.ntpu.edu.tw/" target="_blank">国立台北大学</a></td>
+    <td>台湾</td>
+    <td>1949年</td>
+    <td>公办</td>
+</tr>
+<tr>
+    <td>100</td>
+    <td>1201-1400</td>
+    <td><a href="https://www.ntou.edu.tw/" target="_blank">台湾海洋大学</a></td>
+    <td>台湾</td>
+    <td>1953年</td>
+    <td>公办</td>
+</tr>
+
+    </tbody>
+</table>
+
+
+
+        <!-- 翻页按钮 -->
+        <div class="pagination-container text-center">
+            <button class="btn btn-primary" id="prevPage" disabled>上一页</button>
+            <button class="btn btn-primary" id="nextPage">下一页</button>
+        </div>
+    </div>
+
+    <!-- JS 实现搜索和翻页功能 -->
+    <script>
+        // 表格分页
+        let rowsPerPage = 10;
+        let currentPage = 1;
+
+        function displayTable() {
+            const rows = document.querySelectorAll('#rankingTable tr');
+            const totalRows = rows.length;
+            const totalPages = Math.ceil(totalRows / rowsPerPage);
+
+            // 设置分页按钮状态
+            document.getElementById('prevPage').disabled = currentPage === 1;
+            document.getElementById('nextPage').disabled = currentPage === totalPages;
+
+            // 显示当前页面的行
+            rows.forEach((row, index) => {
+                if (index >= (currentPage - 1) * rowsPerPage && index < currentPage * rowsPerPage) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // 下一页
+        document.getElementById('nextPage').addEventListener('click', () => {
+            currentPage++;
+            displayTable();
+        });
+
+        // 上一页
+        document.getElementById('prevPage').addEventListener('click', () => {
+            currentPage--;
+            displayTable();
+        });
+
+        // 搜索功能
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let searchValue = this.value.toLowerCase();
+            let rows = document.querySelectorAll('#rankingTable tr');
+
+            rows.forEach(row => {
+                let schoolName = row.cells[2].textContent.toLowerCase();
+                if (schoolName.includes(searchValue)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // 初始显示第一页
+        displayTable();
+    </script>
+</body>
+</html>

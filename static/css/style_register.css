@@ -7,7 +7,31 @@ body {
     height: 100vh;
     margin: 0;
 }
+/* **顶部 Logo + 标题** */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+/* **登录框样式** */
 .login-container {
     background-color: #ffffff; /* 背景颜色 */
     padding: 40px 60px;

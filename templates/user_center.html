@@ -7,40 +7,79 @@
     <link rel="stylesheet" href="/static/css/style_user_center.css">
 </head>
 <body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo">
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a id="userLink" href="/user_center">个人中心</a>
+                <a id="logoutLink" href="/logout">退出</a>
+            {% else %}
+                <a id="loginLink" href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- 个人中心主内容 -->
     <div class="container">
-        <div class="teacher-info-container">
+        <h2 class="title">个人中心</h2>
+        <div class="info-container">
             <div class="info-box">
                 <div class="info-line">
-                    <label for="username">用户名:</label>
-                    <input type="text" id="username" name="username" value="{{ username }}" required>
+                    <span class="info-label">| 用户名:</span>
+                    <span class="info-value">{{ username }}</span>
                 </div>
                 <div class="info-line">
-                    <label for="password">密码:</label>
-                    <input type="text" id="password" name="password" value="{{ password }}" required>
+                    <span class="info-label">| 密码:</span>
+                    <span class="info-value">{{ password }}</span>  <!-- 确保 `password` 变量传递到 HTML -->
                 </div>
                 <div class="info-line">
-                    <label for="membership">身份:</label>
-                    {% if is_member %}
-                    <input type="text" id="membership" name="membership" value="会员" required>
-                    {% else %}
-                    <input type="text" id="normaluser" name="normaluser" value="普通用户" required>
-                    {% endif %}
+                    <span class="info-label">| 身份:</span>
+                    <span class="info-value">
+                        {% if role == 'member' %}
+                            会员（到期时间: {{ membership_expiry }}）
+                        {% else %}
+                            普通用户
+                        {% endif %}
+                    </span>
                 </div>
-                <div class="info-line">
-                    <button type="button" id="logout">退出登录</button>
-                    <button type="button" id="feedback-btn">填写反馈</button>
-                </div>
+            </div>
+
+            <div class="button-container">
+                {% if role == 'member' %}
+                    <button class="btn-disabled">已是会员</button>
+                {% else %}
+                    <button id="register-btn" onclick="openPaymentPopup()">注册会员</button>
+                {% endif %}
+                <button id="feedback-btn">填写反馈</button>
             </div>
         </div>
-
-        <!-- 反馈表单弹窗 -->
-        <div id="feedback-form" style="display: none;">
-            <div class="feedback-container">
-                <span class="close-btn">&times;</span>
-                <h2>填写反馈</h2>
-                <textarea id="feedback-text" rows="4" cols="50" placeholder="请输入您的反馈..."></textarea>
-                <button type="button" id="submit-feedback">确认提交</button>
-            </div>
+    </div>
+    <!-- 会员支付弹窗 -->
+    <div id="payment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePaymentPopup()">&times;</span>
+            <h3>选择会员期限</h3>
+            <select id="membership-duration">
+                <option value="1">1 个月 - ¥10</option>
+                <option value="6">6 个月 - ¥50</option>
+                <option value="12">1 年 - ¥90</option>
+            </select>
+            <h3>扫描二维码支付</h3>
+            <img src="/static/images/qrcode.png" alt="支付二维码" class="qr-code">
+            <button onclick="confirmPayment()">我已支付</button>
         </div>
     </div>
 

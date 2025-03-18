@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研途导航 - 找导师</title>
+    <link rel="stylesheet" href="/static/css/style_index.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo"> <!-- 预留 logo -->
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a id="userLink" href="/user_center">个人中心</a>
+                <a id="logoutLink" href="/logout">退出</a>
+            {% else %}
+                <a id="loginLink" href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- 主页背景区域 -->
+    <div class="hero-section">
+        <h1>找导师 上研途导航</h1>
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="请输入想查询的导师名字">
+            <div class="search-button-container">
+                <button id="search-button">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 功能卡片 -->
+    <section class="feature-cards">
+        <div class="card">
+            <h3>关于我们</h3>
+            <p>研途导航致力于为研究生提供精准的导师推荐和院校信息查询服务。</p>
+        </div>
+        <div class="card">
+            <h3>提交反馈</h3>
+            <p>如果您有任何建议或问题，请点击提交反馈，让我们不断改进！</p>
+        </div>
+    </section>
+
+    <script src="/static/js/home.js"></script>
+</body>
+</html>

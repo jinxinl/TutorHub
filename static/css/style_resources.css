@@ -70,3 +70,62 @@ body {
 .user-auth a:hover {
     color: #0056b3;
 }
+
+/* 容器 */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题 */
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 资源部分 */
+.resources {
+    margin-bottom: 30px;
+}
+
+.resource-title {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.resource-title i {
+    margin-right: 10px;  /* 调整图标和文字之间的间距 */
+}
+
+.resource-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-card a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}

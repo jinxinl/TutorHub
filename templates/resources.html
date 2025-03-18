@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术资源 - 研途导航</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_resources.css') }}">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo">
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="#">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a href="/user_center">个人中心</a>
+                <a href="/logout">退出</a>
+            {% else %}
+                <a href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- 页面内容 -->
+    <div class="container">
+        <h2 class="title">学术资源</h2>
+
+        <!-- 数据库资源 -->
+        <div class="resources">
+            <h3 class="resource-title">
+                <i class="fas fa-database"></i> 数据库资源
+            </h3>
+            <div class="resource-card">
+                <a href="https://www.jstor.org" target="_blank">JSTOR</a> - 主要提供学术期刊和电子书资源
+            </div>
+            <div class="resource-card">
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a> - 用于查找学术文献的搜索引擎
+            </div>
+            <div class="resource-card">
+                <a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore</a> - 提供工程和技术领域的学术文章和会议论文
+            </div>
+            <div class="resource-card">
+                <a href="https://www.springer.com" target="_blank">Springer Link</a> - 提供广泛的科学、技术和医学资源
+            </div>
+        </div>
+
+        <!-- 在线学习资源 -->
+        <div class="resources">
+            <h3 class="resource-title">
+                <i class="fas fa-laptop-code"></i> 在线学习资源
+            </h3>
+            <div class="resource-card">
+                <a href="https://www.coursera.org" target="_blank">Coursera</a> - 提供大学课程和专业证书
+            </div>
+            <div class="resource-card">
+                <a href="https://www.edx.org" target="_blank">edX</a> - 提供来自全球知名大学的在线课程
+            </div>
+            <div class="resource-card">
+                <a href="https://www.udemy.com" target="_blank">Udemy</a> - 提供大量技术和职业发展课程
+            </div>
+            <div class="resource-card">
+                <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a> - 提供免费的数学、科学等课程
+            </div>
+        </div>
+
+        <!-- 学术会议资源 -->
+        <div class="resources">
+            <h3 class="resource-title">
+                <i class="fas fa-calendar-alt"></i> 学术会议资源
+            </h3>
+            <div class="resource-card">
+                <a href="https://www.acm.org/conferences" target="_blank">ACM Conferences</a> - 计算机科学领域的会议资源
+            </div>
+            <div class="resource-card">
+                <a href="https://www.ieee.org/conferences" target="_blank">IEEE Conferences</a> - 电气和电子工程领域的会议资源
+            </div>
+            <div class="resource-card">
+                <a href="https://www.springer.com/gp/computer-science/lncs" target="_blank">Springer LNCS</a> - 计算机科学领域的会议录
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

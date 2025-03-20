@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导师推荐</title>
+    <link rel="stylesheet" href="/static/css/style_recommend.css">
+</head>
+<body>
+
+<!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo"> <!-- 预留 logo -->
+            <div class="site-name">研途导航</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/tutor_recommend">导师推荐</a></li>
+                <li><a href="/ranking">院校排名</a></li>
+                <li><a href="/resources">学术资源</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="user-auth">
+            {% if session['username'] %}
+                <a id="userLink" href="/user_center">个人中心</a>
+                <a id="logoutLink" href="/logout">退出</a>
+            {% else %}
+                <a id="loginLink" href="/login">登录</a>
+            {% endif %}
+        </div>
+    </header>
+
+<div class="search-box">
+            <input type="text" id="search-box" placeholder="请输入想查询的导师名字">
+            <div class="search-button-container">
+                <button id="search-button">搜索</button>
+            </div>
+</div>
+
+<div class="form-container">
+    <h2>导师推荐</h2>
+    <p class="info-text">请填写你的要求，若无可填无</p>
+    <form id="recommendForm">
+        <div class="input-group">
+            <div class="input-column">
+                <label for="school">所在学校</label>
+                <input type="text" id="school" name="school" placeholder="请输入所在学校">
+
+                <label for="major">专业</label>
+                <input type="text" id="major" name="major" placeholder="请输入专业">
+
+                <label for="graduationSchool">毕业学校</label>
+                <input type="text" id="graduationSchool" name="graduationSchool" placeholder="请输入毕业学校">
+            </div>
+            <div class="input-column">
+                <label for="title">职称</label>
+                <input type="text" id="title" name="title" placeholder="请输入职称">
+
+                <label for="field">领域</label>
+                <input type="text" id="field" name="field" placeholder="请输入领域">
+
+                <label for="otherRequirements">其他要求</label>
+                <textarea id="otherRequirements" name="otherRequirements" placeholder="请输入其他要求（若无可填写无）"></textarea>
+            </div>
+        </div>
+
+        <button type="submit" id="submitBtn">提交推荐</button>
+    </form>
+
+    <div id="tutorCards" class="tutor-cards"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/static/js/recommend.js"></script>
+</body>
+</html>

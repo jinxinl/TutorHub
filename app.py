@@ -96,7 +96,7 @@ def logout():
     return redirect("/")
 
 
-'''响应搜索按钮点击事件'''
+'''响应导师名字搜索按钮点击事件'''
 @app.route('/search',methods=['POST'])
 def search():
     data = request.get_json()
@@ -277,6 +277,12 @@ def register_member():
     sql = f"UPDATE user SET Role = 'member', MembershipExpiry = '{expiry_date_str}' WHERE UserID = {userid}"
     operateDB.db_interface(op="update", sql=sql)
 
+    print(f"Executing SQL: {sql}")  # 打印 SQL 语句，检查是否正确构建
+    # 更新数据库，将用户信息添加到Member表中
+    sql = f"INSERT INTO member VALUES ({userid}, '{current_time}', {duration}, 'yes')"
+    operateDB.db_interface(op="update", sql=sql)
+    print(f"Executing SQL: {sql}")  # 打印 SQL 语句，检查是否正确构建
+
     # 更新 session
     session['role'] = 'member'
     session['membership_expiry'] = expiry_date_str
@@ -297,6 +303,66 @@ def resources():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+'''导师推荐'''
+@app.route('/tutor_recommend')
+def tutor_recommend():
+    return render_template('tutor_recommend.html')
+
+'''查询根据要求推荐的老师'''
+@app.route('/get_recommended_tutors', methods=['POST'])
+def get_recommended_tutors():
+    print('TXTTTT')
+    # 从前端获取请求的 JSON 数据
+    data = request.get_json()
+
+    school = data.get('school', '')
+    graduationSchool = data.get('graduationSchool', '')
+    title = data.get('title', '')
+    major = data.get('major', '')
+    field = data.get('field', '')
+    otherRequirements = data.get('otherRequirements', '')
+    page = int(data.get('page', 1))
+    per_page = int(data.get('per_page', 5))
+
+    # 计算偏移量
+    offset = (page - 1) * per_page
+
+    # 构造 SQL 查询语句，连接 graduateschool 表和 tutorbasicinformation 表
+    # 同时将 otherRequirements 作为筛选条件，判断 Introduction 中是否包含该要求
+    sql = f"""
+        SELECT t.Name, t.School, t.Title,t.Major, t.Field
+        FROM tutorbasicinformation t
+        JOIN graduateschool g ON t.TutorID = g.TutorID
+        WHERE (t.School LIKE '{school}' OR '{school}' = '')
+        AND (g.School LIKE '%{graduationSchool}%' OR '{graduationSchool}' = '')
+        AND (t.Title LIKE '{title}' OR '{title}' = '')
+        AND (t.Major LIKE '%{major}%' OR '{major}' = '')
+        AND (t.Field LIKE '%{field}%' OR '{field}' = '')
+        AND (t.Introduction LIKE '%{otherRequirements}%' OR '{otherRequirements}' = '')
+    """
+    # 使用 operateDB.db_interface 进行查询
+    result_tup = operateDB.db_interface(op="query", sql=sql)
+    print(f"Executing SQL: {sql}")  # 打印 SQL 语句，检查是否正确构建
+    if not result_tup:
+        print("No tutors found.")  # 如果查询结果为空，打印调试信息
+    tutor_list = []
+
+    if result_tup:
+        for tutor in result_tup:
+            tutor_dict = {
+                "Name": tutor[0],
+                "School": tutor[1],
+                "Title": tutor[2],
+                "Major": tutor[3],
+                "Field": tutor[4]
+            }
+            tutor_list.append(tutor_dict)
+
+
+
+    return jsonify(tutor_list)
+
 
 if __name__ == '__main__':
     app.run()

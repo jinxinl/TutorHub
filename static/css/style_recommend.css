@@ -1,0 +1,244 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4A90E2, #f4f7fc); /* 由蓝色过渡到浅色 */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 顶部导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo 位置 */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 导航栏菜单 */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* 用户登录信息 */
+.user-auth a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.user-auth a:hover {
+    color: #0056b3;
+}
+
+/* 搜索框 */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 30px; /* 增加顶部间距 */
+}
+
+.search-box input {
+    width: 500px; /* 加长输入框 */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #cc5500;
+}
+
+/*推荐表格*/
+.form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #3399ff;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.form-container .info-text {
+    color: #777;
+    text-align: center;
+    margin: 10px 0 30px;
+    font-size: 16px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.input-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin: 12px 0 6px;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-container input[type="text"]:focus,
+.form-container textarea:focus {
+    border-color: #3399ff;
+}
+
+.form-container button {
+    padding: 15px 25px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container button:hover {
+    background-color: #007acc;
+}
+
+.tutor-cards {
+    display: flex;
+    flex-wrap: wrap;  /* 允许换行 */
+    justify-content: space-between; /* 保持卡片之间的间距 */
+    margin-top: 20px;
+}
+
+.tutor-card {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.tutor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tutor-card h3 {
+    font-size: 20px;
+    color: #3399ff;
+    margin-bottom: 10px;
+}
+
+.tutor-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 10px 20px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#pagination button:disabled {
+    background-color: #cccccc;
+}

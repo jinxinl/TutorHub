@@ -1,17 +1,7 @@
-/*
-#退出登录
-document.getElementById('logout').addEventListener('click', logout);
-#提交反馈和反馈相关
+//提交反馈和反馈相关
 document.getElementById('feedback-btn').addEventListener('click', showFeedbackForm);
 document.querySelector('.close-btn').addEventListener('click', hideFeedbackForm);
 document.getElementById('submit-feedback').addEventListener('click', submitFeedback);
-
-function logout() {
-    alert("已退出登录！");
-    session.pop('username', None)
-    session.pop('userid', None)
-    window.location.href = "/";
-}
 
 function showFeedbackForm() {
     document.getElementById('feedback-form').style.display = 'block';
@@ -51,7 +41,7 @@ function submitFeedback() {
         alert("反馈提交失败，请重试!");
     });
 }
- */
+
 // 打开支付弹窗
 function openPaymentPopup() {
     document.getElementById("payment-popup").style.display = "block";

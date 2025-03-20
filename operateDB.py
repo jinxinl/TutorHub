@@ -81,6 +81,24 @@ def query(connection,sql):
 
         return result
 
+def update(connection,sql):
+    result = None
+    if sql:
+        cursor = connection.cursor()
+        try:
+            cursor.execute(sql)
+            connection.commit()  # 提交事务
+            print("Update successful")
+        except Exception as e:
+            connection.rollback()  # 回滚事务
+            print(f"Error during update: {e}")
+        finally:
+            cursor.close()
+
+        return result
+
+
+
 def get_maxID(connection,table_name):
     cursor = connection.cursor()
     try:
@@ -300,6 +318,10 @@ def db_interface(op='',sql='',table_name='',data=''):
 
     elif connection and op == "insert_data":
         insert_data(connection,table_name,data)
+
+    elif connection and op == "update":
+        update(connection,sql)
+        connection.close()
 
 
         connection.close()

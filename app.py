@@ -101,6 +101,7 @@ def logout():
 def search():
     data = request.get_json()
     query = data.get('query')
+    print(f"query: {query}")
     if query:
         sql = f"select * from TutorBasicInformation where Name = '{query}'"
         result_tup = operateDB.db_interface(op="query",sql=sql)

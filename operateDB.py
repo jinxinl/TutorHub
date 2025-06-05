@@ -125,7 +125,7 @@ def db_interface(op='',sql='',table_name='',data=''):
     #连接到MySQL
     host_name = 'localhost'
     user_name = 'root'
-    user_password = 'Star2336*'
+    user_password = '_ASd2895032'
     db_name = 'TutorHub'
 
     connection = create_connection(host_name,user_name,user_password,db_name)

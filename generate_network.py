@@ -1,5 +1,7 @@
 import networkx as nx
 import json
+import matplotlib
+matplotlib.use('Agg')  # 使用纯图像生成后端，避免 Tkinter 问题
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
@@ -85,10 +87,3 @@ def create_graph(name,data,title=''):
     buf.close()
 
     return img_base64
-
-#tutor_school_dict,tutor_rel_list = get_data()
-#alumni_list = transform_alumni_relation('叶晨',tutor_school_dict)
-#print(alumni_list)
-#create_graph('叶晨',alumni_list)
-#create_graph('叶晨',tutor_rel_list['叶晨'])
-#create_graph('dd',None)
